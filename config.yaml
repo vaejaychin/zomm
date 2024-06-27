@@ -1,0 +1,22 @@
+mode: Global
+external-controller: 0.0.0.0:9090
+port: 7890
+proxies:
+  - name: HK - Hong Kong - AS13335 Cloudflare, Inc. - 1
+    server: 146.56.141.168
+    port: 47590
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    servername: a.ssll.gay
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: a.ssll.gay
+    udp: true
+    delay: 999
+    speed:
+      - '11.84'
